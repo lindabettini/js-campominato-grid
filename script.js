@@ -29,13 +29,20 @@ const selectField = document.getElementById('select-level');
 
 // // CREO LE VARIABILI BASILARI
 
-let difficultyLevel;
+let selectValue;
+let choiceMessage;
 let cells;
 let colums; 
 const totalCells = cells * colums; // ? la sposto giù? 
 
-
 selectField.addEventListener('change', (event) => {
-    difficultyLevel = document.getElementById('choice-result'); 
-    difficultyLevel.textContent = `You choose ${event.target.value}`;
+    // ° Creo variabile con valore della Select
+    selectValue = selectField.value;
+    console.log(selectValue);
+    // ° Stampo scelta della Select
+    choiceMessage = document.getElementById('choice-result'); 
+    choiceMessage.textContent = `You choose ${event.target.value}`;
+    console.log(choiceMessage);
   });
+
+ 
