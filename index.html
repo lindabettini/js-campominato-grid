@@ -28,6 +28,7 @@
                 <div class="col-6 text-end">
                     <label for="select-level">Seleziona la difficolt&agrave;</label>
                     <select id="select-level" class="m-2">
+                        <option value="">--</option>
                         <option value="beginner">Facile</option>
                         <option value="medium">Normale</option>
                         <option value="expert">Difficile</option>
@@ -38,7 +39,8 @@
     </header>
     <main>
         <div class="container">
-            <div class="row justify-content-center align-items-center">
+            <div id="choice-result" class="text-center mt-1"></div>
+            <div class="row justify-content-center">
                 <div class="col-12 d-flex justify-content-center">
                     <div id="grid" class="m-5"></div>
                 </div>

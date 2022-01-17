@@ -19,8 +19,23 @@ const getUniqueRandomNumber = (min, max, list) => {
     return randNumber;
 }
 
-// // VARIABILI BASILARI
-let cells = ;
-let colums = ; 
+//ç______________________________________________________
+//ç______________________________________________________
+
+// // PRENDO ELEMENTI DA HTML
+
+const grid = document.getElementById('grid');
+const selectField = document.getElementById('select-level');
+
+// // CREO LE VARIABILI BASILARI
+
+let difficultyLevel;
+let cells;
+let colums; 
 const totalCells = cells * colums; // ? la sposto giù? 
 
+
+selectField.addEventListener('change', (event) => {
+    difficultyLevel = document.getElementById('choice-result'); 
+    difficultyLevel.textContent = `You choose ${event.target.value}`;
+  });
