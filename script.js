@@ -7,7 +7,7 @@ todo - Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzu
 */
 
 // // FUNZIONI 
-const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const getUniqueRandomNumber = (min, max, list) => {
     let randNumber;
@@ -17,7 +17,8 @@ const getUniqueRandomNumber = (min, max, list) => {
 
     return randNumber;
 }
- 
+
+
 
 // // VARIABILI BASILARI
 let cells = 5;
