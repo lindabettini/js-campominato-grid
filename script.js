@@ -42,7 +42,7 @@ selectField.addEventListener('change', (event) => {
     const selectMessage = document.getElementById('choice-result'); 
     selectMessage.textContent = `You choose ${event.target.value}`;
 
-    // ° Attribuisco numero celle ai diversi valori sella Select
+    // ° Attribuisco diverso numero celle ai diversi valori della Select
     switch(selectValue){
         case 'beginner':
             totalCells = 100;
