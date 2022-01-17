@@ -1,4 +1,19 @@
+body {
+  font-family: "Chakra Petch", sans-serif;
+  background-color: black;
+}
+
 header {
-  background-color: lightgreen;
+  background-color: black;
   width: 100%;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.835);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.226);
+  padding: 10px 0;
+}
+
+header h1 {
+  font-family: "Rubik Beastly", cursive;
+  color: greenyellow;
+  font-size: 50px;
 }
