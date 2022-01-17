@@ -66,7 +66,7 @@ selectField.addEventListener('change', (event) => {
         } 
     }
 
-    // ° Attribuisco diverso numero celle ai diversi valori della Select
+    // ° Attribuisco diverso numero di celle ai diversi valori della Select
     let totalCells;
     switch(selectValue) {
         case 'beginner':
