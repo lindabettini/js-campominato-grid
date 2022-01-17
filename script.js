@@ -30,19 +30,32 @@ const selectField = document.getElementById('select-level');
 // // CREO LE VARIABILI BASILARI
 
 let selectValue;
-let choiceMessage;
-let cells;
-let colums; 
-const totalCells = cells * colums; // ? la sposto giù? 
+let selectMessage;
+let totalCells; // ? la sposto giù? 
 
 selectField.addEventListener('change', (event) => {
     // ° Creo variabile con valore della Select
     selectValue = selectField.value;
     console.log(selectValue);
-    // ° Stampo scelta della Select
-    choiceMessage = document.getElementById('choice-result'); 
-    choiceMessage.textContent = `You choose ${event.target.value}`;
-    console.log(choiceMessage);
-  });
 
- 
+    // ° Stampo scelta della Select
+    const selectMessage = document.getElementById('choice-result'); 
+    selectMessage.textContent = `You choose ${event.target.value}`;
+
+    // ° Attribuisco numero celle ai diversi valori sella Select
+    switch(selectValue){
+        case 'beginner':
+            totalCells = 100;
+            console.log(totalCells);
+            break;
+        case 'medium':
+            totalCells = 81;
+            console.log(totalCells);
+            break;
+        case 'expert':
+            totalCells = 49;
+            console.log(totalCells);
+            break;    
+    }
+
+  });
