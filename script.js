@@ -14,14 +14,12 @@ const getUniqueRandomNumber = (min, max, list) => {
     do {
         randNumber = getRandomNumber(min, max);
     }   while (list.includes(randNumber));
-
+    
     return randNumber;
 }
 
-
-
 // // VARIABILI BASILARI
-let cells = 5;
-let colums = 10; 
+let cells = ;
+let colums = ; 
 const totalCells = cells * colums; // ? la sposto giù? 
 
