@@ -10,6 +10,7 @@ header {
   color: rgba(255, 255, 255, 0.835);
   border-bottom: 1px solid rgba(255, 255, 255, 0.226);
   padding: 10px 0;
+  height: 110px;
 }
 
 header h1 {
@@ -23,6 +24,9 @@ header h1 {
   height: 500px;
   border: 1px solid grey;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   flex-wrap: wrap;
 }
 
@@ -30,19 +34,4 @@ header h1 {
   border: 2px solid white;
   cursor: pointer;
   color: white;
-}
-
-.cell.small {
-  width: calc(100% / 10);
-  height: calc(100% / 10);
-}
-
-.cell.medium {
-  width: calc(100% / 9);
-  height: calc(100% / 9);
-}
-
-.cell.large {
-  width: calc(100% / 7);
-  height: calc(100% / 7);
 }
