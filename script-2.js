@@ -13,7 +13,6 @@ const play = () => {
     const TOTAL_BOMBS = 16; 
 
     const level = document.getElementById('select-level').value;
-    console.log('level');
     
     let totalCells; 
     let cellsPerRow;
@@ -30,7 +29,7 @@ const play = () => {
     }
     cellsPerRow = Math.sqrt(totalCells);
 
-    
 }
 
 const playButton = document.getElementById('play');
+playButton.addEventListener('click', play);
